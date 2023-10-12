@@ -1,2 +1,2 @@
 # gauss
-Starknet
+EIP starknet
