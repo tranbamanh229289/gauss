@@ -1,7 +1,7 @@
 #[starknet::contract]
 mod ERC20 {
     use integer::BoundedInt;
-    use launchpad::token::erc20::ierc20::IERC20;
+    use gauss::token::erc20::ierc20::IERC20;
     use starknet::ContractAddress;
     use starknet::get_caller_address;
     use zeroable::Zeroable;
