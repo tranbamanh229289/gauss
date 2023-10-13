@@ -169,7 +169,7 @@ mod ERC721 {
             assert(from == owner, 'ERC721: wrong sender');
             self._token_approvals.write(token_id, Zeroable::zero());
             self._balances.write(from, self._balances.read(from) - 1);
-            self._balances.write(to, self._balances.read(to) - 1);
+            self._balances.write(to, self._balances.read(to) + 1);
             self._owners.write(token_id, to);
             self.emit(Transfer{ from: from, to: to, token_id: token_id });
         }
