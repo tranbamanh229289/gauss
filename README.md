@@ -1,2 +1,2 @@
 # gauss
-EIP starknet
+SNIP Implementation Starknet
