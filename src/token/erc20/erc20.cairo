@@ -6,7 +6,7 @@ mod ERC20 {
     use starknet::get_caller_address;
     use zeroable::Zeroable;
 
-        #[storage]
+    #[storage]
     struct Storage {
         _name: felt252,
         _symbol: felt252,
